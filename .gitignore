@@ -1,41 +1,76 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Rules Reference
+# http://philhosoft.github.io/Software/Git-gitignore-rules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# Temp
+tmp
+.tmp
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# TypeScript cache
+*.tsbuildinfo
+# Optional npm cache directory
+.npm
+# Optional eslint cache
+.eslintcache
+# parcel-bundler cache (https://parceljs.org/)
+.cache
 
-# vercel
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependencies
+node_modules
+/.pnp
+.pnp.*
+.yarn/*
+
+# OS generated files
+.DS_STORE
+
+# Thumbnails
+._*
+Thumbs.db
+
+# Editors stuff
+.idea/**
+.project/**
+.vscode/**
+.vscode-test/**
+
+# Build stuff
+/dist
+/app/dist
+/build
+/out
+
+# Testing
+/coverage
+/.test
+
+# Database
+/prisma/db.sqlite
+/prisma/db.sqlite-journal
+db.sqlite
+
+# env files
+# do not commit any .env files to git, except for the .env.example file
+# https://create.t3.gg/en/usage/env-variables#using-environment-variables
+.env*
+!.env.example
+
+# next.js
+/.next
+next-env.d.ts
+
+# Deployment Platforms
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Specific to this project
