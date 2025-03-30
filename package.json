@@ -1,5 +1,5 @@
 {
-  "name": "vercel-ai-sdk",
+  "name": "next-starter",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -50,7 +50,6 @@
     "@types/react-dom": "19.0.4",
     "@typescript-eslint/eslint-plugin": "8.24.1",
     "@typescript-eslint/parser": "8.24.1",
-    "autoprefixer": "10.4.20",
     "eslint": "9.21.0",
     "eslint-config-ai": "3.6.5",
     "eslint-config-next": "15.1.7",
