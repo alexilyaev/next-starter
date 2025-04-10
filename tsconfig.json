@@ -1,9 +1,13 @@
 {
   "extends": ["@alexilyaev/configs/tsconfig/next"],
   "compilerOptions": {
+    // Must be defined for `drizzle-kit push` to work
+    "baseUrl": ".",
     "paths": {
       // Can't be in the extendable config due to a current bug in Next.js:
       // https://github.com/vercel/next.js/issues/70912
+      // When using shadcn CLI `add` command, this needs to be in `tsconfig.json`
+      // ... GitHub Issue TBD
       "~/*": ["./src/*"]
     }
   },
